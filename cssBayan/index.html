@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>cssBayan</title>
 </head>
 
 <body>
     <main class="main">
-        <h1>CSS Bayan</h1>
+        <h1 class="title">CSS Bayan</h1>
         <hr class="delimeter">
         <input type="radio" name="controls" id="controls-1" hidden>
         <input type="radio" name="controls" id="controls-2" hidden>
-        <label for="controls-1">
-            <span>Pusheen</span>
-            <button>+</button>
-            <img src="./images/Pusheen.jpg" alt="Pusheen">
+        <label class="item item--1" for="controls-1">
+            <span class="item__info">
+                <span class="item__text">Pusheen</span>
+                <span class="item__icon">+</span>
+            </span>
+            <img class="item__img" src="./images/Pusheen.jpg" alt="Pusheen">
         </label>
         <hr class="delimeter">
-        <label for="controls-2">
-            <span>Pusheen Lazy</span>
-            <button>+</button>
-            <img src="./images/Lazy.jpg" alt="Lazy">
+        <label class="item item--2" for="controls-2">
+            <span class="item__info">
+                <span class="item__text">Pusheen Lazy</span>
+                <span class="item__icon">+</span>
+            </span>
+            <img class="item__img" src="./images/Lazy.jpg" alt="Lazy">
         </label>
     </main>
 </body>

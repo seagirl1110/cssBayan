@@ -8,14 +8,55 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: bisque;
+    color: #851143;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .main {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid #db5e5e;
+}
+
+.title {
+    font-size: 1.5em;
+    margin: 1rem 0;
+    color: #000344;
 }
 
 .delimeter {
     border-top: 1px solid #db5e5e;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.item__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__icon {
+    font-size: 2em;
+    transition: all 0.5s;
+}
+
+.item__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#controls-1:checked~.item--1 .item__icon,
+#controls-2:checked~.item--2 .item__icon {
+    transform: rotate(45deg);
+}
+
+#controls-1:checked~.item--1 .item__text,
+#controls-2:checked~.item--2 .item__text {
+    color: #000344;
+    text-shadow:  2px 2px 2px #FFFFFF;
 }
