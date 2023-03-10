@@ -47,8 +47,11 @@ body {
 
 .item__img {
     width: 50%;
+    height: 0;
     margin: 0 auto;
-    display: none;
+    transition: all 2s;
+    transform: scale(0.8);
+    opacity: 0;
 }
 
 #controls-1:checked~.item--1 .item__icon,
@@ -65,7 +68,7 @@ body {
 #controls-4:checked~.item--4 .item__text,
 #controls-5:checked~.item--5 .item__text {
     color: #000344;
-    text-shadow: 2px 2px 2px #FFFFFF;
+    text-shadow: 0.125rem 0.125rem 0.125rem #FFFFFF;
 }
 
 #controls-1:checked~.item--1 .item__img,
@@ -73,5 +76,8 @@ body {
 #controls-3:checked~.item--3 .item__img,
 #controls-4:checked~.item--4 .item__img,
 #controls-5:checked~.item--5 .item__img {
-    display: block;
+    height: 100%;
+    transform: scale(1);
+    opacity: 1;
 }
+
