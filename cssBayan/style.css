@@ -49,9 +49,8 @@ body {
     width: 50%;
     height: 0;
     margin: 0 auto;
-    transition: all 2s;
+    transition: transform 2s;
     transform: scale(0.8);
-    opacity: 0;
 }
 
 #controls-1:checked~.item--1 .item__icon,
@@ -76,8 +75,6 @@ body {
 #controls-3:checked~.item--3 .item__img,
 #controls-4:checked~.item--4 .item__img,
 #controls-5:checked~.item--5 .item__img {
-    height: 100%;
+    height: auto;
     transform: scale(1);
-    opacity: 1;
 }
-
