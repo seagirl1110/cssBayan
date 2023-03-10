@@ -48,15 +48,30 @@ body {
 .item__img {
     width: 50%;
     margin: 0 auto;
+    display: none;
 }
 
 #controls-1:checked~.item--1 .item__icon,
-#controls-2:checked~.item--2 .item__icon {
+#controls-2:checked~.item--2 .item__icon,
+#controls-3:checked~.item--3 .item__icon,
+#controls-4:checked~.item--4 .item__icon,
+#controls-5:checked~.item--5 .item__icon {
     transform: rotate(45deg);
 }
 
 #controls-1:checked~.item--1 .item__text,
-#controls-2:checked~.item--2 .item__text {
+#controls-2:checked~.item--2 .item__text,
+#controls-3:checked~.item--3 .item__text,
+#controls-4:checked~.item--4 .item__text,
+#controls-5:checked~.item--5 .item__text {
     color: #000344;
-    text-shadow:  2px 2px 2px #FFFFFF;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+#controls-1:checked~.item--1 .item__img,
+#controls-2:checked~.item--2 .item__img,
+#controls-3:checked~.item--3 .item__img,
+#controls-4:checked~.item--4 .item__img,
+#controls-5:checked~.item--5 .item__img {
+    display: block;
 }
