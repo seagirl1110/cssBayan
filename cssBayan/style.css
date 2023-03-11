@@ -63,11 +63,23 @@ body {
 }
 
 .item__img {
-    width: 50%;
+    width: 90%;
     height: 0;
     margin: 0 auto;
     transition: transform 1s;
     transform: scale(0.9);
+}
+
+@media screen and (min-width: 820px) {
+    .item__img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .item__img {
+        width: 50%;
+    }
 }
 
 #controls-1:checked~.item--1 .item__icon,
