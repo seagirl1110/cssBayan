@@ -12,6 +12,19 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 500;
+    cursor: default;
+}
+
+@media screen and (min-width: 820px) {
+    body {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 1.5rem;
+    }
 }
 
 .main {
@@ -21,8 +34,9 @@ body {
 
 .title {
     font-size: 1.5em;
-    margin: 1rem 0;
+    margin: 1em 0;
     color: #000344;
+    text-shadow: 0.2rem 0.2rem 0.2rem #e9c3d3;
 }
 
 .delimeter {
@@ -32,17 +46,20 @@ body {
 .item {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1em 0;
 }
 
 .item__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
 }
 
 .item__icon {
-    font-size: 2em;
+    font-size: 1.5em;
     transition: all 0.5s;
+    opacity: 0;
 }
 
 .item__img {
@@ -77,4 +94,28 @@ body {
 #controls-5:checked~.item--5 .item__img {
     height: auto;
     transform: scale(1);
+}
+
+@media (hover: hover) and (min-width: 820px) {
+    .item {
+        cursor: pointer;
+    }
+
+    .bayan:hover .item__icon {
+        opacity: 1;
+    }
+
+    .bayan:hover .item__text {
+        color: #000344;
+        text-shadow: 0.125rem 0.125rem 0.125rem #FFFFFF;
+    }
+
+    .item:hover .item__icon {
+        transform: rotate(45deg);
+    }
+
+    .item:hover .item__img {
+        height: auto;
+        transform: scale(1);
+    }
 }
