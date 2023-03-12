@@ -59,7 +59,6 @@ body {
 .item__icon {
     font-size: 1.5em;
     transition: all 0.5s;
-    opacity: 0;
 }
 
 .item__img {
@@ -111,6 +110,10 @@ body {
 @media (hover: hover) and (min-width: 820px) {
     .item {
         cursor: pointer;
+    }
+
+    .bayan .item__icon {
+        opacity: 0;
     }
 
     .bayan:hover .item__icon {
