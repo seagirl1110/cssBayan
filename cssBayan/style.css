@@ -103,7 +103,7 @@ body {
     }
 }
 
-@media (hover: hover) and (min-width: 820px) {
+@media (hover: hover) {
     .item {
         cursor: pointer;
     }
